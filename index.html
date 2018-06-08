@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="nav">
+        <div class="outbar">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+        </div>
+      </div>
+      <div class="menu">
+      </div>
+      <div class="main">
+        <div class="content">
+          <div class="img">
+          </div>
+          <h1>Мухаммад Рамазанов</h1><br>
+          <p>Юрист, общественный деятель, журналист телекомпании "ННТ"</p><br>
+          <h2>Немного о себе:</h2>
+          <p>Живу в городе Махачкала, работаю юристом...</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="icon face"></div>
+        <div class="icon gmail"></div>
+        <div class="icon inst"></div>
+        <div class="icon tel"></div>
+        <div class="icon twit"></div>
+        <div class="icon vk"></div>
+        <div class="icon you"></div>
+      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $(".outbar").click(function() {
+        $(".menu").addClass('menuactive');
+        $(".nav").addClass('navactive');
+        $(".main").addClass('mainactive');
+        $("body").addClass('bodyactive');
+        $("img").addClass('imgactive');
+      });
+      $(".main").click(function() {
+        $(".menu").removeClass('menuactive');
+        $(".main").removeClass('mainactive');
+        $(".nav").removeClass('navactive');
+        $("body").removeClass('bodyactive');
+        $("img").removeClass('imgactive');
+      });
+    });
+  </script>
+  </body>
+</html>
