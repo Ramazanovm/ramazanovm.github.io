@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
   <body>
       <div class="nav">
@@ -13,16 +14,19 @@
           <div class="bar bar2"></div>
         </div>
       </div>
+		<div class="main">
+		  <div class="content">
+			 <div class="img"></div>
+			 <h1>Мухаммад Рамазанов</h1>
+			 <p>Юрист, общественный деятель, журналист телекомпании "ННТ"</p>
+			 <h2>Немного о себе:</h2>
+			 <p>Живу в городе Махачкала, работаю юристом...</p>
+		  </div>
+		</div>
       <div class="menu">
-      </div>
-      <div class="main">
-        <div class="content">
-          <div class="img"></div>
-          <h1>Мухаммад Рамазанов</h1>
-          <p>Юрист, общественный деятель, журналист телекомпании "ННТ"</p>
-          <h2>Немного о себе:</h2>
-          <p>Живу в городе Махачкала, работаю юристом...</p>
-        </div>
+			 <div class="menu-r-bar">
+				 <i class="far fa-times-circle icon-circle"></i>
+			 </div>
       </div>
       <div class="footer">
         <div class="number">
@@ -54,6 +58,23 @@
         $("body").removeClass('bodyactive');
         $("img").removeClass('imgactive');
       });
+		$(".icon-circle").click(function() {
+		  $(".menu").removeClass('menuactive');
+		  $(".main").removeClass('mainactive');
+		  $(".nav").removeClass('navactive');
+		  $(".footer").removeClass('footeractive');
+		  $("body").removeClass('bodyactive');
+		  $("img").removeClass('imgactive');
+		});
+		$(".menu-r-bar").click(function() {
+		  $(".menu").removeClass('menuactive');
+		  $(".main").removeClass('mainactive');
+		  $(".nav").removeClass('navactive');
+		  $(".footer").removeClass('footeractive');
+		  $("body").removeClass('bodyactive');
+		  $("img").removeClass('imgactive');
+		});
+
     });
   </script>
   </body>
