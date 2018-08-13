@@ -5,9 +5,7 @@ body{
   background-image: url("bg/background.jpg");
   background-size: cover;
 <<<<<<< HEAD
-  background-position: 0 250%;
-=======
->>>>>>> 1b99af4a3b8d93cedceef5facf0824b8aeed1190
+  background-position: 0 0%;
   overflow-x: hidden;
   overflow-y: scroll;
   padding-top: 2cm;
@@ -69,7 +67,7 @@ body{
 .menu{
   position: fixed;
   top: 0;
-  left: -6cm;
+  left: -7cm;
   width: 6cm;
   height: 100%;
   background-color: rgba(0,0,0,.6);
@@ -80,7 +78,7 @@ body{
   left: 0 !important;
 }
 .menuactive .menu-r-bar .icon-circle{
-	transform: scale(4);
+	color: rgba(255, 255, 255, 0.5) !important;
 }
 .menu-r-bar{
 	position: absolute;
@@ -99,14 +97,13 @@ body{
 	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: scale(0);
-	color: rgba(255, 255, 255, 0.5) !important;
+	transform: scale(4);
+	color: rgba(255, 255, 255, 0) !important;
 	transition: .2s;
 }
 .icon-circle:hover{
 	cursor: pointer;
 	color: rgba(255, 255, 255, 0.8) !important;
-
 }
 .nav{
   position: fixed;
