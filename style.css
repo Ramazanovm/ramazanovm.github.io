@@ -4,7 +4,10 @@ body{
 	height: 100vh;
   background-image: url("bg/background.jpg");
   background-size: cover;
+<<<<<<< HEAD
   background-position: 0 250%;
+=======
+>>>>>>> 1b99af4a3b8d93cedceef5facf0824b8aeed1190
   overflow-x: hidden;
   overflow-y: scroll;
   padding-top: 2cm;
